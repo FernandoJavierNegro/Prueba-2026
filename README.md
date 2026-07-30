@@ -13,6 +13,7 @@ El archivo `PRUEBA2026.ipynb` prepara un dataset YOLO en `.zip`, valida imagenes
 3. Ejecutar la celda 1 para crear el entorno Python 3.9 compatible con TensorFlow Lite Model Maker.
 4. Subir el `.zip` con imagenes y etiquetas YOLO en la celda 2.
 5. Ejecutar las celdas restantes para crear el script, entrenar y descargar el paquete Android.
+6. Opcionalmente, usar la celda de prueba para subir una imagen y ver la prediccion dibujada sobre la foto.
 
 El notebook usa un entorno Python 3.9 separado porque `tflite-model-maker==0.4.3` depende de `scann==1.2.6`, que no está disponible para Python 3.10/3.11 en Colab.
 
@@ -27,3 +28,5 @@ El notebook descarga un paquete `efficientdet_lite1_botellas_android.zip` con:
 - CSV de anotaciones;
 - resultados de evaluacion;
 - archivo de informacion del modelo.
+
+Tambien incluye una celda de prueba que permite subir una imagen, ejecutar el modelo TFLite exportado y visualizar las detecciones con sus cajas y confianza.
