@@ -10,11 +10,11 @@ El archivo `PRUEBA2026.ipynb` prepara un dataset YOLO en `.zip`, valida imagenes
 
 1. Abrir `PRUEBA2026.ipynb` en Google Colab.
 2. Activar GPU en `Entorno de ejecucion > Cambiar tipo de entorno de ejecucion`.
-3. Ejecutar la celda 1 para crear el entorno Python 3.11.3 compatible con TensorFlow Lite Model Maker.
+3. Ejecutar la celda 1 para crear el entorno Python 3.10 compatible con TensorFlow Lite Model Maker.
 4. Subir el `.zip` con imagenes y etiquetas YOLO en la celda 2.
 5. Ejecutar las celdas restantes para crear el script, entrenar y descargar el paquete Android.
 
-El notebook usa un entorno Python 3.11.3 separado porque `tflite-model-maker` no instala correctamente sobre algunas versiones actuales de Python en Colab.
+El notebook usa un entorno Python 3.10 separado porque `tflite-model-maker` depende de paquetes que no instalan correctamente sobre algunas versiones actuales de Python en Colab.
 
 ## Resultado
 
